@@ -1,6 +1,6 @@
 <template>
  <v-main>
-   <v-parallax dark src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg">
+   <v-parallax dark src="../assets/works/background.jpg">
      <v-row align="center" justify="center">
        <v-col class="text-center" cols="12">
          <h1 class="display-1 font-weight-thin mb-4">PORTFOLIO</h1>
@@ -21,7 +21,7 @@
       </h2>
     </div>
     <v-row>
-      <v-col cols="12" sm="12" md="4" lg="3"><img src="https://dummyimage.com/250x150/000/fff" alt="" width="250"/></v-col>
+      <v-col cols="12" sm="12" md="4" lg="3"><img src="../assets/works/about.jpg" alt="" width="250"/></v-col>
       <v-col cols="12" sm="12" md="7" lg="9">
         <p class="text">
           テストテストテストテストテストテストテストテストテストテストテストテストテストテスト

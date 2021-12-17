@@ -1,3 +1,4 @@
+<!-- ProductHeaderとProductをまとめるコンポーネント -->
 <template>
   <div>
     <ProductHeader @sortYearChange="sortYearChanged($event)"></ProductHeader>
@@ -12,37 +13,37 @@ import Product from "./Product.vue";
 export default {
   name: "ProductList",
   components: { ProductHeader, Product },
-  data: () => ({
+  data: () => (
+    {/* 配列でデータを入れている */
     sortYear: "全て",
     products: [
       {
         id: 1,
-        name: "work1",
-        image: "https://dummyimage.com/250x150/000/fff",
+        name: "●●会社さま",
+    image_src:require('@/assets/works/img1.jpg'),
         year: "2020",
         category: "コーポレート",
         use: "html css JS",
       },
+     
       {
         id: 2,
-      name: "work2",
-      image: "../assets/works/dummyimage.png",
+      name: "●●化学さま",
+        image_src:require('@/assets/works/img2.jpg'),
       year: "2019",
       category: "LP",
       use: "Vue.js",
       info: "",
     }, {
       id: 3,
-      name: "work3",
-      image: "../assets/works/dummyimage.png",
-      year: "2018",
+      name: "●●工芸さま",
+    image_src:require('@/assets/works/img3.jpg'),      year: "2018",
       category: "ECサイト",
       use: "デザイン",
     }, {
       id: 4,
-      name: "work4",
-      image: "../assets/works/dummyimage.png",
-      year: "2019",
+      name: "●●キャンペーンサイト",
+    image_src:require('@/assets/works/img4.jpg'),      year: "2019",
       category: "LP",
       use: "Vue.js",
       info: "",
